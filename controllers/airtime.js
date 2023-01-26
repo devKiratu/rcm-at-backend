@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const credentials = {
   apiKey: process.env.API_KEY,
-  username: "sandbox",
+  username: process.env.USERNAME,
 };
 
 const africastalking = require("africastalking")(credentials);

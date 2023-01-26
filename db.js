@@ -4,17 +4,17 @@ const Employees = [
   {
     name: "christopher",
     cadre: Cadre.SENIOR,
-    phoneNumber: "+254735000001",
+    phoneNumber: process.env.PHONE1,
   },
   {
     name: "christopher",
     cadre: Cadre.MID,
-    phoneNumber: "+254735000002",
+    phoneNumber: process.env.PHONE2,
   },
   {
     name: "christopher",
     cadre: Cadre.ENTRY,
-    phoneNumber: "+254735000003",
+    phoneNumber: process.env.PHONE3,
   },
 ];
 

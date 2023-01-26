@@ -1,7 +1,7 @@
 const AirtimeAllowances = {
-  ENTRY: 200,
-  MID: 400,
-  SENIOR: 700,
+  ENTRY: 1,
+  MID: 2,
+  SENIOR: 3,
 };
 
 module.exports = AirtimeAllowances;

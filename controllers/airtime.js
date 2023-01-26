@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const credentials = {
   apiKey: process.env.API_KEY,
-  username: process.env.USERNAME,
+  username: process.env.USER_NAME,
 };
 
 const africastalking = require("africastalking")(credentials);
@@ -25,9 +25,8 @@ exports.sendAirtime = (req, res) => {
   const options = {
     recipients,
   };
-
   airtime
     .send(options)
     .then((response) => res.json(response))
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err.message));
 };

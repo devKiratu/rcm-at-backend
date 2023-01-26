@@ -1,4 +1,5 @@
 const Cadre = require("./utils/Cadre");
+require("dotenv").config();
 
 const Employees = [
   {

@@ -28,5 +28,5 @@ exports.sendAirtime = (req, res) => {
   airtime
     .send(options)
     .then((response) => res.json(response))
-    .catch((err) => console.log(err.message));
+    .catch((err) => console.log(err));
 };

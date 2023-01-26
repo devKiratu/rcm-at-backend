@@ -1,9 +1,21 @@
-import { Cadre } from "./utils/Cadre";
+const Cadre = require("./utils/Cadre");
 
-export const Employees = [
+const Employees = [
   {
     name: "christopher",
     cadre: Cadre.SENIOR,
-    phoneNumber: "+254735000000",
+    phoneNumber: "+254735000001",
+  },
+  {
+    name: "christopher",
+    cadre: Cadre.MID,
+    phoneNumber: "+254735000002",
+  },
+  {
+    name: "christopher",
+    cadre: Cadre.ENTRY,
+    phoneNumber: "+254735000003",
   },
 ];
+
+module.exports = Employees;

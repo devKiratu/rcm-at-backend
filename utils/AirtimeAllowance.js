@@ -1,5 +1,7 @@
-export const AirtimeAllowances = {
-  ENTRY: 2000,
-  MID: 5000,
-  SENIOR: 8000,
+const AirtimeAllowances = {
+  ENTRY: 200,
+  MID: 400,
+  SENIOR: 700,
 };
+
+module.exports = AirtimeAllowances;

@@ -12,6 +12,7 @@ const africastalking = require("africastalking")(credentials);
 const airtime = africastalking.AIRTIME;
 
 exports.sendAirtime = (req, res) => {
+  console.log("credentials", credentials);
   const recipients = [];
   Employees.forEach((e) => {
     let recipient = {
@@ -25,6 +26,7 @@ exports.sendAirtime = (req, res) => {
   const options = {
     recipients,
   };
+  console.log("options: ", options);
   airtime
     .send(options)
     .then((response) => res.json(response))
